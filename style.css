@@ -2,6 +2,30 @@
 *** GENERAL
 **********************************************/
 
+.final_score{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 520px;
+    color: #555;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    width: 160px;
+    text-transform: uppercase;
+}
+.final_score:focus{
+    outline: none;;
+}
+
+#dice_1{
+top:125px;
+}
+
+#dice_2{
+top:250px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +40,7 @@
 }
 
 body {
-    background-image: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)), url(back.jpg);
+    background: linear-gradient(to right, #ee9ca7, #ffdde1); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-position: center;
     font-family: Lato;
@@ -35,6 +59,7 @@ body {
     background-color: #fff;
     box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
     overflow: hidden;
+    border-radius: 50px;
 }
 
 .player-0-panel,
